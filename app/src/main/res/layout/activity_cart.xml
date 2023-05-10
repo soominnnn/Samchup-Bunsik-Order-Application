@@ -32,13 +32,13 @@
 
     <ImageView
         android:id="@+id/bottom_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="413dp"
+        android:layout_height="60dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/bottombutton" />
+        app:srcCompat="@drawable/orderbutton" />
 
     <ImageView
         android:id="@+id/firstView"
@@ -49,7 +49,7 @@
         app:layout_constraintHorizontal_bias="0.51"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView3"
-        app:srcCompat="@drawable/main_teokbokki" />
+        app:srcCompat="@drawable/roje_noprice" />
 
     <ImageView
         android:id="@+id/twiceView"
@@ -60,7 +60,7 @@
         app:layout_constraintHorizontal_bias="0.51"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/firstView"
-        app:srcCompat="@drawable/roje_teokbokki" />
+        app:srcCompat="@drawable/roje_noprice" />
 
     <ImageView
         android:id="@+id/thirdView"
@@ -71,7 +71,7 @@
         app:layout_constraintHorizontal_bias="0.51"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/twiceView"
-        app:srcCompat="@drawable/mararoje_teokbokki" />
+        app:srcCompat="@drawable/mararoje_noprice" />
 
     <ImageView
         android:id="@+id/fourView"
@@ -84,7 +84,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/thirdView"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/bazil_teokbokki" />
+        app:srcCompat="@drawable/bazil_noprice" />
 
     <TextView
         android:id="@+id/textView"
@@ -132,6 +132,58 @@
         android:text="0개"
         android:textColor="#2E2828"
         app:layout_constraintEnd_toEndOf="@+id/twiceView"
+        app:layout_constraintTop_toTopOf="@+id/fourView" />
+
+    <TextView
+        android:id="@+id/firstPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="61dp"
+        android:fontFamily="@font/pretendard_regular"
+        android:text="7000원"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/firstView"
+        app:layout_constraintEnd_toEndOf="@+id/firstView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/firstView"
+        app:layout_constraintTop_toTopOf="@+id/firstView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/twicePrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="61dp"
+        android:fontFamily="@font/pretendard_regular"
+        android:text="8000원"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="@+id/twiceView"
+        app:layout_constraintTop_toTopOf="@+id/twiceView" />
+
+    <TextView
+        android:id="@+id/thirdPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="61dp"
+        android:fontFamily="@font/pretendard_regular"
+        android:text="9000원"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="@+id/thirdView"
+        app:layout_constraintTop_toTopOf="@+id/thirdView" />
+
+    <TextView
+        android:id="@+id/fourPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="61dp"
+        android:fontFamily="@font/pretendard_regular"
+        android:text="10000원"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="@+id/fourView"
         app:layout_constraintTop_toTopOf="@+id/fourView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

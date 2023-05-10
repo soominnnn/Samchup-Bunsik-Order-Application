@@ -29,6 +29,8 @@ public class MenuActivity extends AppCompatActivity {
     private int [] imageviewSet;
     private int [] textViewSet ;
 
+    private int [] priceSet;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -92,29 +94,37 @@ public class MenuActivity extends AppCompatActivity {
             else{
                 imageviewSet = new int[ArrayLength];
                 textViewSet = new int[ArrayLength];
+                priceSet = new int[ArrayLength];
+
+
                 if(main.getClick() == 1){
                     imageviewSet[ArrCount] = 0;
                     textViewSet[ArrCount] = main.getCount();
+                    priceSet[ArrCount] = main.getCount()*main.getPrice();
                     ArrCount++;
                 }
 
                 if(roje.getClick() == 1){
                     imageviewSet[ArrCount] = 1;
                     textViewSet[ArrCount] = roje.getCount();
+                    priceSet[ArrCount] = roje.getCount()*roje.getPrice();
                     ArrCount++;
                 }
                 if( mara.getClick() == 1){
                     imageviewSet[ArrCount] = 2;
                     textViewSet[ArrCount] = mara.getCount();
+                    priceSet[ArrCount] = mara.getCount()*mara.getPrice();
                     ArrCount++;
                 }
                 if( bazil.getClick() == 1){
                     imageviewSet[ArrCount] = 3;
                     textViewSet[ArrCount] = bazil.getCount();
+                    priceSet[ArrCount] = bazil.getCount()*bazil.getPrice();
                     ArrCount++;
                 }
                 bundle.putIntArray("imageViewSet",imageviewSet);
                 bundle.putIntArray("textViewSet", textViewSet);
+                bundle.putIntArray("priceSet",priceSet);
                 intent.putExtras(bundle);
                 startActivity(intent);
             }
